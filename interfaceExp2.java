@@ -13,9 +13,10 @@ class Desktop extends Computer{
 
 class Laptope extends Computer{
     public void coding(){
-        System.out.println("Coding in laptop");
+        System.out.println("Coding in Laptop");
     }
 }
+
 
 
 class Devloper{
