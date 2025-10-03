@@ -1,4 +1,5 @@
-enum Status{
+
+   enum Status{
     Pending,
     InProgress,
     Completed,
