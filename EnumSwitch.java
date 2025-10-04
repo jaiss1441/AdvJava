@@ -14,7 +14,7 @@ public class EnumSwitch {
                 System.out.println("The process has Started.");
                 break;
             case IN_PROGRESS:
-                System.out.println("The Process is In Progress.");
+                System.out.println("The Process is In Progress");
                 break;
             case COMPLETED:
                 System.out.println("The Process is Completed.");
