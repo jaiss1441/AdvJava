@@ -14,3 +14,5 @@ public class LamdaExpression2 {
         obj.show(5);
     }
 }
+//when we using lamda expression in class it did't create Annonimous class but the main class file size
+//is increzed
