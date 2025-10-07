@@ -16,7 +16,7 @@ public class LamdaWithReturn {
         // int result = obj.add(5, 4);
         // System.out.println(result);
 
-        Lam2 obj = (int i, int j) -> i + j; // with lamda reduced version 
+        Lam2 obj = (int i, int j) -> i + j; // with lamda reduced version // no need to mention return keyword
 
         int result = obj.add(5, 4);
         System.out.println(result);
