@@ -8,7 +8,8 @@ public class ArrayListExp {
         //if we did't mention which type of collection it is it will give run time exception
         //so aviding that you have to mention type 
         //becouse of that if try to add another type of value it will give compile time error
-
+        //it did't support indexing for indexing you can use List insted of Collection
+        
         arr.add(12);
         arr.add(13);
         arr.add(14);
