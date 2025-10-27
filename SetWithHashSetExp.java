@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetExp {
+public class SetWithHashSetExp {
     public static void main(String[] args) {
         Set<Integer> se = new HashSet<>();
         //In Set we can not store Duplicate values
