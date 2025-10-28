@@ -14,7 +14,10 @@ public class MapWithHashMap {
         students.put("Nilesh", 75);
 
         System.out.println(students + "  ");
-
+        //If you want value of specific key you have use get() method in that method 
+        //just mention that key same gose for Value
+        System.out.println(students.get("Vikas"));
+                                                                                                        
         for(String key : students.keySet()){
             System.out.println(key );//getting Key using keySet() method
         }
