@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ComparatorWithAnonumusClass {
+public class ComparatorWithAnonymusClass {
     //It is use to Short Collection wiht help Comparetor Interface it is Functional InterFace
     public static void main(String[] args) {
 
