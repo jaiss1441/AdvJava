@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class Student implements Comparable<Integer>{
+class Student implements Comparable<Student>{
 
     int id;
     String name;
@@ -13,8 +13,11 @@ class Student implements Comparable<Integer>{
         this.name = name;
     }
    
-    public int compareTo(Integer o) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public int compareTo(Student that) {
+        if(this.id > that.id)
+        return 1;
+        else
+        return -1;
     }
 
     @Override
@@ -33,9 +36,9 @@ class Student implements Comparable<Integer>{
 public class ComparableExp {
     public static void main(String[] args) {
        
-        Comparator<Integer> com = new Comparator<Integer>(){
-            public int compare(Integer i, Integer j){
-                if(i%10 > j%10)
+        Comparator<Student> com = new Comparator<Student>(){
+            public int compare(Student i, Student j){
+                if(i.id > j.id)
                 return 1;
                 else
                 return -1;
@@ -43,14 +46,16 @@ public class ComparableExp {
         };
        
 
-        List<Integer> stud = new ArrayList<>();
+        List<Student> stud = new ArrayList<>();
 
-        stud.add(78);
-        stud.add(54);
-        stud.add(98);
-        stud.add(56);
+        stud.add(new Student(4,"Vikas"));
+        stud.add(new Student(3, "Chetan"));
+        stud.add(new Student(2, "Saurabh"));
+        stud.add(new Student(1, "Nilesh"));
 
-        Collections.sort(stud, com);
-        System.out.println(stud);
+        Collections.sort(stud);
+        for(Student s : stud){
+        System.out.println(s);
+        }
     }
 }
