@@ -1,4 +1,4 @@
-class A{
+class Aa1{
     public void show(){
         System.out.println("In Show method of class A");
     }
